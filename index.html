@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HEMALATHA-PORTFOLIO</title>
+<link rel="stylesheet" href="portfolio_styles.css"> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo"><span>Hemalatha | Portfolio</span></div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-line"></div>
+  <div class="hero-content">
+    Hello, I'm<br><span class="accent"><h1>HEMALATHA SURESHBABU</span></h1>
+    <div class="hero-tag">QA Engineer</div>
+    <p class="hero-subtitle">Experienced in Quality Assurance, Test Automation & AI Testing — building reliable, intelligent software products that stand up to scrutiny.</p>
+    <div class="hero-badges">
+      <span class="badge gold">⬡ QA Engineering</span>
+      <span class="badge gold">⬡ AI Testing</span>
+      <span class="badge gold">⬡ Test Automation</span>
+      <span class="badge gold">⬡ Software Quality</span>
+    </div>
+    <div class="hero-actions">
+      <button onclick="printResume()" class="hero-cta-outline">⎙ Print Resume</button>
+      <a href="#about" class="hero-cta">Explore My Work →</a>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2>About</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('about', 'personal')">Personal Info</button>
+    <button class="tab-btn" onclick="switchTab('about', 'education')">Education</button>
+    <button class="tab-btn" onclick="switchTab('about', 'certifications')">Courses & Certifications</button>
+  </div>
+
+  <!-- PERSONAL INFO -->
+  <div class="tab-content active" id="about-personal">
+    <div class="info-grid">
+      <div class="info-item"><div class="info-key">Full Name </div><div class="info-val">Hemalatha S</div></div>
+      <div class="info-item"><div class="info-key">Role </div><div class="info-val">Software Engineer</div></div>
+      <div class="info-item"><div class="info-key">Specialization </div><div class="info-val">QA, Test Automation, Web Testing, API Testing, AI Testing</div></div>
+      <div class="info-item"><div class="info-key">Location</div><div class="info-val">Chennai, Tamilnadu, India</div></div>
+      <div class="info-item"><div class="info-key">Email</div><div class="info-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fc929d9199bc99919d9590d29f9391">s.hemalatha.1110@gmail.com <!-- [email&#160;protected] --> </a></div></div>
+      <div class="info-item"><div class="info-key">Availability</div><div class="info-val">Open to Opportunities & Ready to relocate</div></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Professional Summary</div>
+      <p class="card-text">A dedicated Software Engineer with deep expertise in Quality Assurance and AI Testing. Passionate about building robust testing frameworks, ensuring software quality at scale, and driving the reliability of AI-powered systems. Experienced in end-to-end testing strategies, automation pipelines, and evaluating machine learning models for real-world performance.</p>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="tab-content active" id="about-education">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-period">Jan 2025 — Dec 2026</div>
+        <div class="timeline-title">MBA - Business Data Analytics</div>
+        <div class="timeline-org">University of Madras IDE</div>
+        <div class="timeline-desc">Science stream with Mathematics and Computer Science. Percentage: XX%</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-period">Aug 2019 - May 2023</div>
+        <div class="timeline-title">Bachelor of Technology - Information Technology</div>
+        <div class="timeline-org">P. B. College of Engineering, Anna University</div>
+        <div class="timeline-desc">Degree in Information Technology. Focus on software development, algorithms, and systems design. Graduated with distinction / CGPA: X.X</div>
+        <div class="card-tags"><span class="tag">Computer Science</span><span class="tag">Software Engineering</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- CERTIFICATIONS -->
+  <div class="tab-content active" id="about-certifications">
+   <!-- <div class="card">
+      <div class="card-title">ISTQB Certified Tester</div>
+      <div class="card-sub">International Software Testing Qualifications Board · YEAR</div>
+      <p class="card-text">Foundation Level certification in software testing, covering testing fundamentals, test design techniques, and test management.</p>
+      <div class="card-tags"><span class="tag">ISTQB</span><span class="tag">QA</span></div> -->
+    </div>
+    <div class="card">
+      <div class="card-title">Python Intermediate</div>
+      <div class="card-sub">Solo Learn · 2025</div>
+      <p class="card-text">Specialized course covering AI/ML model evaluation, bias testing, prompt testing, and LLM quality assurance methodologies.</p>
+      <div class="card-tags"><span class="tag">AI Testing</span><span class="tag">LLM Evaluation</span></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Software Testing</div>
+      <div class="card-sub">QSpiders · 2025</div>
+      <p class="card-text">Comprehensive training in browser automation, Page Object Model, and building scalable test automation frameworks.</p>
+      <div class="card-tags"><span class="tag">Manual Testing</span><span class="tag">SQL</span></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Front End Development</div>
+      <div class="card-sub">Great Learning · 2023</div>
+      <p class="card-text">Description of your course or certification achievement.</p>
+      <div class="card-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Javasript</span></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Database Management System</div>
+      <div class="card-sub">Great Learning · 2023</div>
+      <p class="card-text">Description of your course or certification achievement.</p>
+      <div class="card-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Javasript</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- RESUME -->
+<section id="resume">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2>Resume</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('resume', 'experience')">Work Experience</button>
+    <button class="tab-btn" onclick="switchTab('resume', 'skills')">Skills</button>
+    <button class="tab-btn" onclick="switchTab('resume', 'awards')">Awards & Achievements</button>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="tab-content active" id="resume-experience">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-period">Oct 2023 - Dec 2025</div>
+        <div class="timeline-title">Quality Service Associate</div>
+        <div class="timeline-org">Amazon · Full-time</div>
+        <p class="timeline-desc">Led quality assurance strategy for AI-powered products. Designed and implemented test automation frameworks, conducted model evaluation for LLM outputs, and ensured compliance with AI safety and reliability standards. Collaborated with cross-functional teams to integrate testing into CI/CD pipelines.</p>
+        <div class="card-tags"><span class="tag">Device Testing</span><span class="tag">API Testing</span><span class="tag">Performance Testing</span><span class="tag">AI Testing</span><span class="tag">Test Automation</span><span class="tag">CI/CD</span><span class="tag">Smoke & Sanity</span><span class="tag">Agile & Scrum Practices</span><span class="tag">Testcase Writing</span><span class="tag">Defect Management</span></div>
+      </div>
+     <!-- <div class="timeline-item">
+        <div class="timeline-period">MON YEAR — MON YEAR</div>
+        <div class="timeline-title">QA Engineer</div>
+        <div class="timeline-org">Previous Company · Full-time</div>
+        <p class="timeline-desc">Developed and maintained comprehensive test suites for web and mobile applications. Performed functional, regression, performance, and API testing. Reduced bug escape rate by X% through improved test coverage and early defect detection processes.</p>
+        <div class="card-tags"><span class="tag">Selenium</span><span class="tag">API Testing</span><span class="tag">Agile</span></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-period">MON YEAR — MON YEAR</div>
+        <div class="timeline-title">Junior Software Test Engineer</div>
+        <div class="timeline-org">First Company · Full-time</div>
+        <p class="timeline-desc">Executed manual and automated test cases, logged defects, participated in sprint ceremonies, and assisted in building foundational test documentation and test plans.</p>
+        <div class="card-tags"><span class="tag">Manual Testing</span><span class="tag">JIRA</span><span class="tag">TestRail</span></div>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="tab-content" id="resume-skills">
+    <div class="skills-grid">
+      <div class="skill-cat">
+        <div class="skill-cat-title">Testing & QA</div>
+        <div class="skill-list">
+          <div class="skill-item">Manual Testing</div>
+          <div class="skill-item">Test Automation</div>
+          <div class="skill-item">API Testing</div>
+          <div class="skill-item">Web Testing</div>
+          <div class="skill-item">Performance Testing</div>
+	  <div class="skill-item">Testcase Writing</div>
+	  <div class="skill-item">Defect Management</div>
+	  <!-- <div class="skill-item">SDLC & STLC</div> -->
+        </div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-title">AI Testing</div>
+        <div class="skill-list">
+          <div class="skill-item">LLM Evaluation</div>
+          <div class="skill-item">Prompt Testing</div>
+          <div class="skill-item">AI Bias Detection</div>
+          <div class="skill-item">Model Validation</div>
+          <div class="skill-item">Safety Testing</div>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-title">Tools</div>
+        <div class="skill-list">
+          <div class="skill-item">Postman</div>
+          <div class="skill-item">JIRA</div>
+	  <div class="skill-item">Confluence</div>
+	  <div class="skill-item">Testrail</div>
+          <div class="skill-item">GitHub</div>
+	  <div class="skill-item">LibreOffice calc</div>
+	  <!-- <div class="skill-item">MS Power BI</div> -->
+        </div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-title">Methodologies</div>
+        <div class="skill-list">
+          <div class="skill-item">Agile</div>
+	  <div class="skill-item">Scrum</div>
+          <div class="skill-item">BDD</div>
+          <div class="skill-item">CI/CD Integration</div>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-title">Programming</div>
+        <div class="skill-list">
+          <div class="skill-item">Python</div>
+          <div class="skill-item">Core Java</div>
+          <div class="skill-item">HTML & CSS</div>
+          <div class="skill-item">JavaScript </div>
+          <div class="skill-item">SQL</div>
+	  <div class="skill-item">Automation Framework: Pytest</div>
+        </div>
+      </div>
+     <!-- <div class="skill-cat">
+        <div class="skill-cat-title">Frameworks</div>
+        <div class="skill-list">
+          <div class="skill-item">Pytest</div>
+          <div class="skill-item">Robot Framework</div>
+        </div>
+      </div> -->
+      <div class="skill-cat">
+        <div class="skill-cat-title">Soft Skills</div>
+        <div class="skill-list">
+	  <div class="skill-item">Business Communication</div>
+          <div class="skill-item">Analytical Thinking</div>
+          <div class="skill-item">Attention to Detail</div>
+          <div class="skill-item">Team Collaboration</div>
+          <div class="skill-item">Problem Solving</div>
+	  <div class="skill-item">Presentation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AWARDS -->
+  <div class="tab-content" id="resume-awards">
+    <div class="awards-grid">
+    <!--  <div class="award-card">
+        <div class="award-icon">🏆</div>
+        <div>
+          <div class="card-title" style="font-size:1rem;">Best QA Engineer of the Year</div>
+          <div class="card-sub">Company Name · YEAR</div>
+          <p class="card-text">Recognized for outstanding contribution to quality processes and achieving zero critical defects in production.</p>
+        </div>
+      </div>
+      <div class="award-card">
+        <div class="award-icon">⭐</div>
+        <div>
+          <div class="card-title" style="font-size:1rem;">Excellence in AI Testing</div>
+          <div class="card-sub">Organization / Conference · YEAR</div>
+          <p class="card-text">Awarded for pioneering work in LLM evaluation and AI model quality assurance.</p>
+        </div>
+      </div> -->
+      <div class="award-card">
+        <div class="award-icon">🎖️</div>
+        <div>
+          <div class="card-title" style="font-size:1rem;">Spot Award — Quality Performance</div>
+          <div class="card-sub">Amazon · 2025</div>
+          <p class="card-text">Spot recognition for component ownership & identifying and resolving a critical security vulnerability during pre-release testing.</p>
+        </div>
+      </div>
+     <!-- <div class="award-card">
+        <div class="award-icon">📜</div>
+        <div>
+          <div class="card-title" style="font-size:1rem;">Hackathon Winner — QA Track</div>
+          <div class="card-sub">Event Name · YEAR</div>
+          <p class="card-text">First place in the QA engineering hackathon for building an automated AI model evaluation pipeline.</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2>Projects</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-num">01</div>
+      <div class="project-title">AI Model Evaluation Framework</div>
+      <p class="project-desc">Built an end-to-end LLM evaluation framework to assess model accuracy, hallucination rate, safety, and response quality across diverse prompts and use cases.</p>
+      <div class="card-tags"><span class="tag">Python</span><span class="tag">LLM Testing</span><span class="tag">OpenAI API</span></div>
+    </div>
+    <div class="project-card">
+      <div class="project-num">02</div>
+      <div class="project-title">Selenium Test Automation Suite</div>
+      <p class="project-desc">Designed and implemented a scalable Selenium-based test automation framework using Page Object Model, integrated with Jenkins for continuous testing.</p>
+      <div class="card-tags"><span class="tag">Selenium</span><span class="tag">Java</span><span class="tag">Jenkins</span><span class="tag">TestNG</span></div>
+    </div>
+    <div class="project-card">
+      <div class="project-num">03</div>
+      <div class="project-title">API Testing with Postman & Python</div>
+      <p class="project-desc">Comprehensive API testing suite for RESTful microservices, including automated contract testing, load testing, and schema validation.</p>
+      <div class="card-tags"><span class="tag">Python</span><span class="tag">REST Assured</span><span class="tag">Postman</span></div>
+    </div>
+    <div class="project-card">
+      <div class="project-num">04</div>
+      <div class="project-title">AI Bias Detection Tool</div>
+      <p class="project-desc">Developed a tool to systematically test AI/ML models for demographic bias, fairness metrics, and adversarial robustness across multiple input dimensions.</p>
+      <div class="card-tags"><span class="tag">Python</span><span class="tag">ML Testing</span><span class="tag">Fairness AI</span></div>
+    </div>
+    <div class="project-card">
+      <div class="project-num">05</div>
+      <div class="project-title">Performance Testing Dashboard</div>
+      <p class="project-desc">Built a real-time performance monitoring dashboard integrating JMeter test results with Grafana visualizations for system bottleneck analysis.</p>
+      <div class="card-tags"><span class="tag">JMeter</span><span class="tag">Grafana</span><span class="tag">Performance</span></div>
+    </div>
+    <div class="project-card">
+      <div class="project-num">06</div>
+      <div class="project-title">Your Project Here</div>
+      <p class="project-desc">Add your own project description. Highlight the problem you solved, technologies used, and the impact you made.</p>
+      <div class="card-tags"><span class="tag">Technology</span><span class="tag">Tool</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2>Contact</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="contact-layout">
+    <div class="contact-info">
+      <h3>Let's Work Together</h3>
+      <p>Open to new opportunities, collaborations, and conversations about QA, AI Testing, and software quality. Feel free to reach out.</p>
+
+      <div class="contact-item">
+        <div class="contact-icon">✉</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="690708040c290c04080005470a0604">s.hemalatha.1110@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">in</div>
+        <div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value"><a href="https://www.linkedin.com/in/hemalatha-sureshbabu-4310aa230/">www.linkedin.com/in/hemalatha-sureshbabu-4310aa230</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">⌥</div>
+        <div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value"><a href="https://github.com/Hemalatha110/">github.com/Hemalatha110</a></div>
+        </div>
+      </div><br><br>
+     <!-- <div class="contact-item">
+        <div class="contact-icon">☏</div>
+        <div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">+91 9363128624</div>
+        </div> -->
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label class="form-label">Your Name</label>
+        <input class="form-input" type="text" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input class="form-input" type="email" placeholder="yourmail@email.com" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Subject</label>
+        <input class="form-input" type="text" placeholder="Job Opportunity / Collaboration">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Message</label>
+        <textarea class="form-textarea" placeholder="Tell me about the opportunity..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Send Message →</button>
+    </form>
+  </div>
+</section>
+
+<script data-cfasync="false" src="portfolio_script.js"></script>
+<!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script> -->
+
+</body>
+</html>
+<footer>
+  <p>© 2026 HEMALATHA S · Crafted with precision </p>
+</footer>
